@@ -1,0 +1,12 @@
+.nav-link{
+
+    &:hover{
+
+        color: $info !important; 
+    }
+
+    &:active{
+
+        color: $info !important;
+    }
+}

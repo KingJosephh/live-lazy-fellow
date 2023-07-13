@@ -1,0 +1,36 @@
+.deco-line{
+
+    padding-left: 1rem;
+    position: relative;
+    &::after{
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: $info;
+    }
+
+}
+
+// .deco-line是一個CSS類別，用來選擇要應用這段樣式的HTML元素。
+
+// padding-left: 1rem;設定左側的內邊距，這樣內容就會與垂直線保持一定的間距。
+
+// position: relative;設定元素的定位為相對定位，這樣後續的::after偽元素可以根據這個相對定位進行定位。
+
+// &::after使用CSS選擇器::after來創建一個偽元素。這個偽元素會在選擇的元素的內容之後插入。
+
+// content: "";設定偽元素的內容為空。
+
+// position: absolute;設定偽元素的定位為絕對定位，這樣可以根據父元素進行定位。
+
+// top: 0;、left: 0;、bottom: 0;設定偽元素相對於父元素的定位位置，這裡表示偽元素的頂部、左側和底部都與父元素對齊，創造出一個與父元素等高的垂直線。
+
+// width: 3px;設定垂直線的寬度為3像素。
+
+// background-color: $info;設定垂直線的背景顏色。這裡的$info可能是一個SCSS或Sass變數，它應該在其他地方定義了顏色值。
+
+// 總結來說，這段程式碼通過創建一個絕對定位的偽元素，在選擇的元素後方插入一條垂直線，並設定垂直線的寬度和背景顏色。這樣就可以在網頁中為元素添加裝飾性的垂直線效果。
